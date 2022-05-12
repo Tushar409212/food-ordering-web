@@ -1,0 +1,180 @@
+/* css reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navbar styling  */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar div img {
+    width: 50px;
+    margin: 8px 10px;
+}
+
+/* navbar style  */
+#navbar ul {
+    display: flex;
+    font-family: 'Mukta', sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    /* border: 2px solid red; */
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 1px 23px;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 14px;
+
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* navbar end  */
+
+/* home started  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid saddlebrown; */
+    height: 450px;
+}
+
+#home::before {
+    content: "";
+    background: url('/img/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 77%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.05rem;
+
+}
+
+/* services styling */
+
+#services {
+    margin: 20px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    border-radius: 23px;
+    background-color: aliceblue;
+}
+
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* clients section  */
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+
+
+
+#clients::before {
+    content: "";
+    background: url("../img/bg.jpg");
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+
+.clients-item {
+    padding: 10px 50px;
+}
+
+#clients .clients-item img {
+    width: 100px;
+
+}
+
+
+
+
+/* utility classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.2rem;
+    padding: 13px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.1rem;
+    padding: 13px;
+}
+
+.btn {
+    padding: 5px 20px;
+    margin: 15px;
+    background-color: orangered;
+    border: 2px solid white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
