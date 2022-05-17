@@ -25,10 +25,10 @@
 
 #navbar div img {
     width: 50px;
-    margin: 8px 10px;
+    margin: 8px 20px;
 }
 
-/* navbar style  */
+
 #navbar ul {
     display: flex;
     font-family: 'Mukta', sans-serif;
@@ -36,7 +36,7 @@
 
 #navbar ul li {
     list-style: none;
-    /* border: 2px solid red; */
+
 }
 
 #navbar ul li a {
@@ -63,8 +63,8 @@
     padding: 20px 50px;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid saddlebrown; */
-    height: 450px;
+
+    height: 432px;
 }
 
 #home::before {
@@ -97,7 +97,8 @@
 /* services styling */
 
 #services {
-    margin: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
     display: flex;
 }
 
@@ -116,36 +117,85 @@
     margin: auto;
 }
 
-/* clients section  */
-#clients {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px;
-}
-
-
-
+/* clients  */
 
 #clients::before {
     content: "";
-    background: url("../img/bg.jpg");
+    background: url('../img/bg.jpg') no-repeat center center/cover;
     position: absolute;
-    height: 25%;
+
+    height: 41.3%;
     width: 100%;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.45;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-
-.clients-item {
-    padding: 10px 50px;
+.client-item {
+    padding: 34px 50px;
 }
 
-#clients .clients-item img {
-    width: 100px;
 
+.client-item img {
+    height: 120px;
+}
+
+/* contact section  */
+#contact::before {
+    content: "";
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    position: absolute;
+
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    padding-bottom: 15px;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 150%;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 2px solid gray;
+}
+
+.form-btn {
+
+    width: 30%;
+    padding: 2px;
+
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(248, 143, 95);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* footer  */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 34px;
 }
 
 
