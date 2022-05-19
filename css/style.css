@@ -105,9 +105,10 @@
 #services .box {
     border: 2px solid red;
     padding: 5px 10px;
-    margin: 5px 10px;
+    margin: 5px 35px;
     border-radius: 23px;
     background-color: aliceblue;
+    margin-bottom: 18px;
 }
 
 
@@ -227,4 +228,250 @@ footer {
 
 .center {
     text-align: center;
+}
+
+/* mediaqueryis */
+
+
+@media only screen and (min-width:0px) and (max-width:380px) {
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar div img {
+        width: 70px;
+        margin: 10px 10px;
+    }
+
+
+
+    #navbar ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    #navbar ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 1px 16px;
+        color: white;
+        font-size: 1.1rem;
+        border-radius: 14px;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        align-items: center;
+        justify-content: center;
+        height: 335px;
+    }
+
+    #home::before {
+        content: "";
+        background: url(../img/bg1.jpg) no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 72%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.75;
+    }
+
+    #home p {
+        color: white;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    #services {
+        margin: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #services .box {
+        border: 2px solid red;
+        padding: 5px 10px;
+        margin: 5px 20px;
+        border-radius: 23px;
+        background-color: aliceblue;
+        margin-bottom: 18px;
+    }
+
+    .client-item {
+        padding: 15px 15px;
+    }
+
+    .client-item img {
+        height: 46px;
+    }
+
+    #contact::before {
+        content: "";
+        background: url(../img/contact.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 70%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+    .form-group {
+        padding-bottom: 10px;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 83%;
+        padding: 6px;
+        border-radius: 8px;
+        border: 2px solid gray;
+    }
+
+    /* utility class  */
+    .h-primary {
+        font-family: 'Bree Serif', serif;
+        font-size: 30px;
+        padding: 13px;
+    }
+
+    .h-secondary {
+        font-family: 'Bree Serif', serif;
+        font-size: 20px;
+        /* padding: 13px; */
+    }
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width:380px) and (max-width:480px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar div img {
+        width: 70px;
+        margin: 10px 10px;
+    }
+
+
+
+    #navbar ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    #navbar ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 1px 16px;
+        color: white;
+        font-size: 1.1rem;
+        border-radius: 14px;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        align-items: center;
+        justify-content: center;
+        height: 335px;
+    }
+
+    #home::before {
+        content: "";
+        background: url(../img/bg1.jpg) no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 55%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.75;
+    }
+
+
+    #home p {
+        color: white;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    #services {
+        margin: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #services .box {
+        border: 2px solid red;
+        padding: 5px 10px;
+        margin: 5px 20px;
+        border-radius: 23px;
+        background-color: aliceblue;
+        margin-bottom: 18px;
+    }
+
+    .client-item {
+        padding: 15px 15px;
+    }
+
+    .client-item img {
+        height: 46px;
+    }
+
+    #contact::before {
+        content: "";
+        background: url(../img/contact.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 57%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+    .form-group {
+        padding-bottom: 10px;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 83%;
+        padding: 6px;
+        border-radius: 8px;
+        border: 2px solid gray;
+    }
+
+    /* utility class  */
+    .h-primary {
+        font-family: 'Bree Serif', serif;
+        font-size: 30px;
+        padding: 13px;
+    }
+
+    .h-secondary {
+        font-family: 'Bree Serif', serif;
+        font-size: 20px;
+
+    }
 }
