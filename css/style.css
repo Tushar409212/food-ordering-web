@@ -359,9 +359,7 @@ footer {
 }
 
 @media only screen and (min-width:380px) and (max-width:480px) {
-    body {
-        overflow: hidden;
-    }
+
 
     #navbar {
         flex-direction: column;
@@ -403,7 +401,7 @@ footer {
         position: absolute;
         top: 0px;
         left: 0px;
-        height: 72%;
+        height: 56%;
         width: 100%;
         z-index: -1;
         opacity: 0.75;
@@ -446,7 +444,7 @@ footer {
         content: "";
         background: url(../img/contact.jpg) no-repeat center center/cover;
         position: absolute;
-        height: 70%;
+        height: 57%;
         width: 100%;
         z-index: -1;
         opacity: 0.6;
